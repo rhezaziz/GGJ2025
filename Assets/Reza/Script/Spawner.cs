@@ -22,9 +22,13 @@ public class Spawner : MonoBehaviour
         int num = Random.Range(0,barangs[index].Halangan.Count-1);
         // barang[num].gameObject.GetComponent<MoveBarang>().speed = this.speed;
         // barang[num].gameObject.GetComponent<MoveBarang>().direction= this.direction;
-
-        GameObject _barang = Instantiate(barangs[index].Halangan[num],this.transform.position,this.transform.rotation);
+        GameObject temp = barangs[index].Halangan[num];
+        GameObject _barang = Instantiate(temp,this.transform.position,this.transform.rotation);
         _barang.transform.SetParent(GameManager.instance.parent);
+
+        if(temp.GetComponent<Barang>().level > GameManager.instance.level){
+            _barang.transform.localScale = Vector2.one * 1f;
+        }
         
     }
 }
