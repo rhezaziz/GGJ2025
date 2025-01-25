@@ -16,5 +16,6 @@ public class Spawner : MonoBehaviour
 
         GameObject _barang = Instantiate(barang[num],this.transform.position,this.transform.rotation);
         _barang.transform.SetParent(GameManager.instance.parent);
+        
     }
 }

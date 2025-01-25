@@ -20,7 +20,7 @@ public class Barang : MonoBehaviour, IObject
     //     rb = GetComponent<Rigidbody2D>();
     // }
     void Start(){
-        objBubble = FindObjectOfType<Bubble>().transform;
+        
     }
     // void Update(){
     //     if(active){
@@ -36,16 +36,21 @@ public class Barang : MonoBehaviour, IObject
         if(other.CompareTag("Bubble")){
             Action();
         }
+
+        if(other.CompareTag("Wall")){
+            Destroy(this.gameObject);
+
+        }
     }
 
     void Action(){
-        int levelBubble = objBubble.GetComponent<Bubble>().mLevel;
+        int levelBubble = FindObjectOfType<Bubble>().mLevel;
         bool bigger = level > levelBubble;
 
 
         switch(bigger){
             case true:
-                Damage(objBubble.gameObject);
+                Damage(FindObjectOfType<Bubble>().gameObject);
                 break;
 
             case false:
@@ -57,16 +62,16 @@ public class Barang : MonoBehaviour, IObject
 
     #region Interface Object
     public void Damage(GameObject obj){
-        var bubble = obj.GetComponent<IBubble>();
+        var bubble = FindObjectOfType<Bubble>().GetComponent<IBubble>();
 
         bubble.GetDamage();
     }
 
     public void Food(){
-        var bubble = objBubble.GetComponent<IBubble>();
+        var bubble = FindObjectOfType<Bubble>().GetComponent<IBubble>();
 
         bubble.eat();
-        gameObject.SetActive(false);
+        Destroy(this.gameObject);
     }
 
     #endregion

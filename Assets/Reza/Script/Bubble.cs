@@ -9,7 +9,9 @@ public class Bubble : MonoBehaviour, IBubble
     [System.Serializable]
     public class BubbleData{
         public int exp;
+        
     }
+    public int heart = 3;
 
     [SerializeField] private int level;
     float currentExp;
@@ -35,7 +37,45 @@ public class Bubble : MonoBehaviour, IBubble
     #region  Interface
     public void GetDamage(){
         // Health Berkurang
-        Debug.Log("Get Damage");
+        if(this.heart >1){
+        this.heart--;
+        this.BlinkAndChangeColor();
+
+        }
+        else{
+            Destroy(this.gameObject);
+        }
+        
+    }
+
+        void BlinkAndChangeColor()
+    {
+         float blinkDuration = 0.5f; // Time for one blink cycle
+         int blinkCount = 5; // Number of times to blink
+        // Get the material of the object
+        Material material = this.gameObject.GetComponent<Renderer>().material;
+        Color targetColor = Color.red; // The color to change to
+        Color originalColor = material.color;
+
+        // Create a DOTween Sequence
+        Sequence sequence = DOTween.Sequence();
+
+        // Add color change to the sequence
+        sequence.Append(material.DOColor(targetColor, blinkDuration / 2));
+
+        // Add blinking effect to the sequence
+        for (int i = 0; i < blinkCount; i++)
+        {
+            sequence.Append(material.DOFade(0f, blinkDuration / 2)) // Fade out
+                    .Append(material.DOFade(1f, blinkDuration / 2)); // Fade in
+        }
+
+        // Reset the color back to the original color after blinking
+        sequence.Append(material.DOColor(originalColor, blinkDuration / 2));
+
+        // Start the sequence
+        sequence.Play();
+        
     }
 
     public void eat(){

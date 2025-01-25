@@ -19,7 +19,7 @@ public class TestBack : MonoBehaviour
         // -.6F
         //animasi();
     }
-
+    // Layer 3 -35 (-2), Layer 4 -75 (-4), -135 (-6), -160 (-8)
     public void changeValue(int level){
         if(level <= 2){
             mengecilBackground();
@@ -33,7 +33,7 @@ public class TestBack : MonoBehaviour
 
     void mengecilBackground(){
         transform.DOScale(transform.localScale + (Vector3.one * -.075f), 1f);
-        transform.DOMoveY(transform.position.y + -.6f, 2f);
+        transform.DOMoveY(transform.position.y + -1f, 2f);
     }
 
     void mengecilParent(){
