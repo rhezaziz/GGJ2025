@@ -31,7 +31,7 @@ public class Bubble : MonoBehaviour, IBubble
 
 
     void Start(){
-        //exp = data[level].exp;
+        exp = data[level].exp;
     }
 
     #region  Interface
@@ -98,7 +98,12 @@ public class Bubble : MonoBehaviour, IBubble
             anim.Append(transform.DOScale(Vector2.one * .75f, .25f));
             anim.Append(transform.DOScale(Vector2.one * 1.25f, .25f));
             anim.Append(transform.DOScale(Vector2.one, .25f));
+
+            GameManager.instance.initLevel();
         }
     }
     #endregion
 }
+
+
+

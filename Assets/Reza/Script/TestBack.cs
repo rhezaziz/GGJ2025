@@ -21,12 +21,12 @@ public class TestBack : MonoBehaviour
     }
     // Layer 3 -35 (-2), Layer 4 -75 (-4), -135 (-6), -160 (-8)
     public void changeValue(int level){
-        if(level <= 2){
+        if(level < 1){
             mengecilBackground();
             return;
         }
         else{
-            mengecilParent();
+            mengecilParent(level);
             return;
         }
     }
@@ -36,7 +36,7 @@ public class TestBack : MonoBehaviour
         transform.DOMoveY(transform.position.y + -1f, 2f);
     }
 
-    void mengecilParent(){
+    void mengecilParent(int level){
         Debug.Log("Mengecil");
         foreach(Transform child in parent.GetComponentsInChildren<Transform>()){
             if(child.name != parent.name){
@@ -44,6 +44,8 @@ public class TestBack : MonoBehaviour
             }
 
         }
+
+         transform.DOMoveY(transform.position.y + -1f, 2f);
     }
 
     void animasi(){

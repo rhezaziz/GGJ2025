@@ -24,9 +24,7 @@ public class GameManager : MonoBehaviour
         instance = this;
     }
     void Start(){
-        initLevel();
-        
-        
+        intervalTime = objS[level].timer;
     }
 
     void Update(){
@@ -65,7 +63,10 @@ public class GameManager : MonoBehaviour
     }
 
     public void initLevel(){
+        level += 1;
         intervalTime = objS[level].timer;
-
+        foreach(var spawn in spawners){
+            spawn.index = level;
+        }
     }
 }
