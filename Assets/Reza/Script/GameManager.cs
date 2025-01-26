@@ -5,6 +5,10 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance; 
+    public GameOver cutsceneGO;
+    public bool gameOver;
+    public Bubble player;
+    public Drag playerMove;
     [System.Serializable]
     public class DataObj{
         public float timer;
@@ -45,8 +49,12 @@ public class GameManager : MonoBehaviour
             nextTime = Time.time + intervalTime;
         }
         */
+        if(gameOver == true ){
+            playerMove.enabled = false;
+            cutsceneGO.enabled = true;
 
-        if(Time.time >= nextTime){
+        }
+        else if(Time.time >= nextTime){
             List<int> num = new List<int>();
             num.Add(Random.Range(0,spawners.Count-1));
             num.Add(Random.Range(0,spawners.Count-1));
@@ -56,10 +64,17 @@ public class GameManager : MonoBehaviour
             // objS[level].spawners[num2].getListBarang();
             foreach(var index in num){
                 spawners[index].getListBarang();
+                
             }
 
+           
+
             nextTime = Time.time + intervalTime;
+
+            
         }
+
+        
     }
 
     public void initLevel(){

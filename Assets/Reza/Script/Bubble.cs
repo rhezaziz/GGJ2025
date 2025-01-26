@@ -16,6 +16,9 @@ public class Bubble : MonoBehaviour, IBubble
     [SerializeField] private int level;
     float currentExp;
     float exp;
+    public limitMove stopMove;
+
+    
 
     public BubbleData[] data;
     public int mLevel{
@@ -32,6 +35,15 @@ public class Bubble : MonoBehaviour, IBubble
 
     void Start(){
         exp = data[level].exp;
+    }
+    /// <summary>
+    /// Update is called every frame, if the MonoBehaviour is enabled.
+    /// </summary>
+    void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Space)){
+            eat();
+        }
     }
 
     #region  Interface
@@ -79,11 +91,14 @@ public class Bubble : MonoBehaviour, IBubble
     }
 
     public void eat(){
+        if(stopMove.GetComponent<limitMove>().maxWall == false){
         test.changeValue(level);
+        }
         Sequence anim = DOTween.Sequence();
         anim.Append(transform.DOScale(Vector2.one  * .75f, .25f));
         anim.Append(transform.DOScale(Vector2.one  * 1.25f, .25f));
         anim.Append(transform.DOScale(Vector2.one, .25f).OnComplete(addExp));
+        
     }
 
     // GGgsdgs

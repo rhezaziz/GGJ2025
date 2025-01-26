@@ -25,6 +25,10 @@ public class TestBack : MonoBehaviour
             mengecilBackground();
             return;
         }
+
+      
+       
+        
         else{
             mengecilParent(level);
             return;
