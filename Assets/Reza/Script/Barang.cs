@@ -13,14 +13,20 @@ public class Barang : MonoBehaviour, IObject
     public float jarak;
     Transform objBubble;
     Transform[] obj;
+
+    public AudioClip clips;
+    AudioSource sound;
     // Rigidbody2D rb;
 
 
-    // void Awake(){
-    //     rb = GetComponent<Rigidbody2D>();
-    // }
+    void Awake(){
+        sound = GetComponent<AudioSource>();
+    }
+
     void Start(){
-        
+        if(clips != null){
+            sound.PlayOneShot(clips);
+        }
     }
     // void Update(){
     //     if(active){

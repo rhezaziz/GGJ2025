@@ -535,20 +535,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   barangs:
   - Halangan:
-    - {fileID: 1963686785113028036, guid: 8b67b1a875fdbc34f9b3574d7858f16b, type: 3}
-    - {fileID: 8115180001561218311, guid: a0817d0cd58b51e4ea6dd5da3debbccd, type: 3}
+    - {fileID: 467620467902087366, guid: 8a53c49a7eea95048bd09907c4644d30, type: 3}
+    - {fileID: 8859995054717622733, guid: 1f86ffce918c9b5499a70fe09a070170, type: 3}
+    - {fileID: 5542019385788903404, guid: c71aff330409e9c4dbc6ce154e61ac0a, type: 3}
+    - {fileID: 8157862925256913348, guid: 4d91b73252470694db236c529ad632d2, type: 3}
+    - {fileID: 965679842754125709, guid: 4748e8fd520d43543af4695eaa93ed1b, type: 3}
+    - {fileID: 5660885512647004341, guid: 641595090ee10da448a665376e1de8b7, type: 3}
   - Halangan:
-    - {fileID: 8115180001561218311, guid: a0817d0cd58b51e4ea6dd5da3debbccd, type: 3}
-    - {fileID: 139071012037602661, guid: 219f81f5fa560a74bb39e944f440525a, type: 3}
+    - {fileID: 2663911352809463433, guid: bd5491507092af5489222d6f0b87dc7e, type: 3}
+    - {fileID: 2663911352809463433, guid: bd5491507092af5489222d6f0b87dc7e, type: 3}
+    - {fileID: 813830610685259807, guid: 6871ea91c56b33041b7ca102bc9ba5a6, type: 3}
+    - {fileID: 8859995054717622733, guid: 1f86ffce918c9b5499a70fe09a070170, type: 3}
+    - {fileID: 4077331519210919695, guid: d9e99b646275ad94eaf9fdd8a3890748, type: 3}
+    - {fileID: 1860124587367505137, guid: 08794a02c99d7eb4f86dfa7995ba2a62, type: 3}
+    - {fileID: 254634338939279083, guid: fef134ce588d7f644bd96581778e9b6f, type: 3}
+    - {fileID: 4325781131192373893, guid: d130d02ca75ca4c43aee1134ebc46a42, type: 3}
   - Halangan:
-    - {fileID: 139071012037602661, guid: 219f81f5fa560a74bb39e944f440525a, type: 3}
-    - {fileID: 139071012037602661, guid: 83bf30d6ae6425f4b9667864cda66e31, type: 3}
+    - {fileID: 254634338939279083, guid: fef134ce588d7f644bd96581778e9b6f, type: 3}
+    - {fileID: 2812228588692067718, guid: a6bd6ea2308cf8e499c42f7744683917, type: 3}
+    - {fileID: 254634338939279083, guid: fef134ce588d7f644bd96581778e9b6f, type: 3}
+    - {fileID: 4077331519210919695, guid: d9e99b646275ad94eaf9fdd8a3890748, type: 3}
+    - {fileID: 980505502388429460, guid: f3242841fb64c9f48a1e2a7516873547, type: 3}
+    - {fileID: 1903019676692062913, guid: 5fc88270ec1dafa46b3208ec9b60d7ca, type: 3}
+    - {fileID: 1903019676692062913, guid: 5fc88270ec1dafa46b3208ec9b60d7ca, type: 3}
   - Halangan:
-    - {fileID: 139071012037602661, guid: 83bf30d6ae6425f4b9667864cda66e31, type: 3}
-    - {fileID: 8115180001561218311, guid: 2011b450e19058c49834abd5272df3f0, type: 3}
+    - {fileID: 2959070186461880630, guid: 791f04fa412ec114c8d10b6af0d5fbdc, type: 3}
+    - {fileID: 2959070186461880630, guid: 791f04fa412ec114c8d10b6af0d5fbdc, type: 3}
+    - {fileID: 980505502388429460, guid: f3242841fb64c9f48a1e2a7516873547, type: 3}
+    - {fileID: 1903019676692062913, guid: 5fc88270ec1dafa46b3208ec9b60d7ca, type: 3}
+    - {fileID: 722749063526874163, guid: f84f9ad6ce25c684fb4af52fd6fca598, type: 3}
+    - {fileID: 6932590506736865034, guid: 9f9c1cefef2b5d74fbc8d1ab3322b981, type: 3}
+    - {fileID: 722749063526874163, guid: f84f9ad6ce25c684fb4af52fd6fca598, type: 3}
   - Halangan:
-    - {fileID: 8115180001561218311, guid: 2011b450e19058c49834abd5272df3f0, type: 3}
-    - {fileID: 8115180001561218311, guid: 2011b450e19058c49834abd5272df3f0, type: 3}
+    - {fileID: 722749063526874163, guid: f84f9ad6ce25c684fb4af52fd6fca598, type: 3}
+    - {fileID: 722749063526874163, guid: f84f9ad6ce25c684fb4af52fd6fca598, type: 3}
+    - {fileID: 6932590506736865034, guid: 9f9c1cefef2b5d74fbc8d1ab3322b981, type: 3}
+  direction: {x: 0, y: 1}
 --- !u!1 &600460100
 GameObject:
   m_ObjectHideFlags: 0
@@ -851,6 +873,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   barangs: []
+  direction: {x: 1, y: 0}
 --- !u!1 &1062782698
 GameObject:
   m_ObjectHideFlags: 0
@@ -1004,25 +1027,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   barangs:
   - Halangan:
-    - {fileID: 1963686785113028036, guid: af42faadd69f92149b7fd3453ab78390, type: 3}
-    - {fileID: 8115180001561218311, guid: 7082d241d0de09d4d8eb6a80d81da8ef, type: 3}
-    - {fileID: 8115180001561218311, guid: 7082d241d0de09d4d8eb6a80d81da8ef, type: 3}
+    - {fileID: 8157862925256913348, guid: 4d91b73252470694db236c529ad632d2, type: 3}
+    - {fileID: 8157862925256913348, guid: 4d91b73252470694db236c529ad632d2, type: 3}
+    - {fileID: 965679842754125709, guid: 4748e8fd520d43543af4695eaa93ed1b, type: 3}
+    - {fileID: 5660885512647004341, guid: 641595090ee10da448a665376e1de8b7, type: 3}
+    - {fileID: 467620467902087366, guid: 8a53c49a7eea95048bd09907c4644d30, type: 3}
+    - {fileID: 2663911352809463433, guid: bd5491507092af5489222d6f0b87dc7e, type: 3}
+    - {fileID: 2720455900481636066, guid: fcd28d8712493a34facb7a878597bce5, type: 3}
+    - {fileID: 2720455900481636066, guid: fcd28d8712493a34facb7a878597bce5, type: 3}
   - Halangan:
-    - {fileID: 8115180001561218311, guid: 7082d241d0de09d4d8eb6a80d81da8ef, type: 3}
-    - {fileID: 139071012037602661, guid: 25d859063e9306240bdb0b6707a7a610, type: 3}
-    - {fileID: 139071012037602661, guid: 25d859063e9306240bdb0b6707a7a610, type: 3}
+    - {fileID: 467620467902087366, guid: 8a53c49a7eea95048bd09907c4644d30, type: 3}
+    - {fileID: 467620467902087366, guid: 8a53c49a7eea95048bd09907c4644d30, type: 3}
+    - {fileID: 2663911352809463433, guid: bd5491507092af5489222d6f0b87dc7e, type: 3}
+    - {fileID: 4077331519210919695, guid: d9e99b646275ad94eaf9fdd8a3890748, type: 3}
+    - {fileID: 1860124587367505137, guid: 08794a02c99d7eb4f86dfa7995ba2a62, type: 3}
+    - {fileID: 4325781131192373893, guid: d130d02ca75ca4c43aee1134ebc46a42, type: 3}
+    - {fileID: 1369781986283267763, guid: 7fd6e8f0287a38d4d8661f9b062e52fe, type: 3}
+    - {fileID: 4325781131192373893, guid: d130d02ca75ca4c43aee1134ebc46a42, type: 3}
+    - {fileID: 2812228588692067718, guid: a6bd6ea2308cf8e499c42f7744683917, type: 3}
   - Halangan:
-    - {fileID: 8115180001561218311, guid: 0a2c5c867ad2e4e42b0e9dab3895d347, type: 3}
-    - {fileID: 139071012037602661, guid: 25d859063e9306240bdb0b6707a7a610, type: 3}
-    - {fileID: 139071012037602661, guid: 25d859063e9306240bdb0b6707a7a610, type: 3}
+    - {fileID: 4077331519210919695, guid: d9e99b646275ad94eaf9fdd8a3890748, type: 3}
+    - {fileID: 4077331519210919695, guid: d9e99b646275ad94eaf9fdd8a3890748, type: 3}
+    - {fileID: 1369781986283267763, guid: 7fd6e8f0287a38d4d8661f9b062e52fe, type: 3}
+    - {fileID: 4325781131192373893, guid: d130d02ca75ca4c43aee1134ebc46a42, type: 3}
+    - {fileID: 4586979232625490758, guid: 4f35a2445ad323e41bf9b30d3057d32c, type: 3}
+    - {fileID: 2812228588692067718, guid: a6bd6ea2308cf8e499c42f7744683917, type: 3}
+    - {fileID: 9174310752661104440, guid: 3b071c18d6db79f44a678c072ff4b150, type: 3}
+    - {fileID: 5798330517903223368, guid: 00ecbd5dcd4ca6c46b53ac6e24032d36, type: 3}
+    - {fileID: 5798330517903223368, guid: 00ecbd5dcd4ca6c46b53ac6e24032d36, type: 3}
+    - {fileID: 1502095496927108481, guid: 903fe0730ad606c4b9e177db197d0c46, type: 3}
+    - {fileID: 2939310834083262636, guid: 1f1f0ce06643a6442909b0bd86bd9426, type: 3}
   - Halangan:
-    - {fileID: 8115180001561218311, guid: 0a2c5c867ad2e4e42b0e9dab3895d347, type: 3}
-    - {fileID: 8115180001561218311, guid: c6c32569a241def4785b05fcab4784a7, type: 3}
-    - {fileID: 8115180001561218311, guid: c6c32569a241def4785b05fcab4784a7, type: 3}
+    - {fileID: 9174310752661104440, guid: 3b071c18d6db79f44a678c072ff4b150, type: 3}
+    - {fileID: 5798330517903223368, guid: 00ecbd5dcd4ca6c46b53ac6e24032d36, type: 3}
+    - {fileID: 9174310752661104440, guid: 3b071c18d6db79f44a678c072ff4b150, type: 3}
+    - {fileID: 991399269909870095, guid: 317d9a295b1a4ac4e84cb416c06ef4b0, type: 3}
+    - {fileID: 722749063526874163, guid: f84f9ad6ce25c684fb4af52fd6fca598, type: 3}
+    - {fileID: 5277528433738525219, guid: 9f4fe8bb813d84f43a543c88cf12da4d, type: 3}
   - Halangan:
-    - {fileID: 8115180001561218311, guid: c6c32569a241def4785b05fcab4784a7, type: 3}
-    - {fileID: 8115180001561218311, guid: c6c32569a241def4785b05fcab4784a7, type: 3}
-    - {fileID: 8115180001561218311, guid: c6c32569a241def4785b05fcab4784a7, type: 3}
+    - {fileID: 991399269909870095, guid: 317d9a295b1a4ac4e84cb416c06ef4b0, type: 3}
+    - {fileID: 722749063526874163, guid: f84f9ad6ce25c684fb4af52fd6fca598, type: 3}
+    - {fileID: 5277528433738525219, guid: 9f4fe8bb813d84f43a543c88cf12da4d, type: 3}
+  direction: {x: -1, y: 0}
 --- !u!1 &1233031550
 GameObject:
   m_ObjectHideFlags: 0
@@ -1052,7 +1098,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1233031550}
   m_LocalRotation: {x: 0, y: 0, z: -0.70009965, w: 0.71404517}
-  m_LocalPosition: {x: -11.16, y: 1.8, z: 0}
+  m_LocalPosition: {x: -11.16, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1176,25 +1222,49 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   barangs:
   - Halangan:
-    - {fileID: 1963686785113028036, guid: 4328820056ba6f24290d23b4e8299d94, type: 3}
-    - {fileID: 8115180001561218311, guid: db58b680bac49c2448598fe080c2d8be, type: 3}
-    - {fileID: 8115180001561218311, guid: db58b680bac49c2448598fe080c2d8be, type: 3}
+    - {fileID: 2412395504307481423, guid: 28a5d2f4cc3001547a203a9a2f71b377, type: 3}
+    - {fileID: 4832647152465640983, guid: aaa6ddcd85c14b64da9c55dcd0663ab1, type: 3}
+    - {fileID: 8157862925256913348, guid: 4d91b73252470694db236c529ad632d2, type: 3}
+    - {fileID: 2412395504307481423, guid: 28a5d2f4cc3001547a203a9a2f71b377, type: 3}
+    - {fileID: 2412395504307481423, guid: 28a5d2f4cc3001547a203a9a2f71b377, type: 3}
+    - {fileID: 813830610685259807, guid: 6871ea91c56b33041b7ca102bc9ba5a6, type: 3}
+    - {fileID: 8859995054717622733, guid: 1f86ffce918c9b5499a70fe09a070170, type: 3}
+    - {fileID: 5542019385788903404, guid: c71aff330409e9c4dbc6ce154e61ac0a, type: 3}
+    - {fileID: 5542019385788903404, guid: c71aff330409e9c4dbc6ce154e61ac0a, type: 3}
   - Halangan:
-    - {fileID: 8115180001561218311, guid: db58b680bac49c2448598fe080c2d8be, type: 3}
-    - {fileID: 139071012037602661, guid: de9d7c3018b479742b7b30f68198ac36, type: 3}
-    - {fileID: 139071012037602661, guid: de9d7c3018b479742b7b30f68198ac36, type: 3}
+    - {fileID: 813830610685259807, guid: 6871ea91c56b33041b7ca102bc9ba5a6, type: 3}
+    - {fileID: 813830610685259807, guid: 6871ea91c56b33041b7ca102bc9ba5a6, type: 3}
+    - {fileID: 8859995054717622733, guid: 1f86ffce918c9b5499a70fe09a070170, type: 3}
+    - {fileID: 2663911352809463433, guid: bd5491507092af5489222d6f0b87dc7e, type: 3}
+    - {fileID: 4077331519210919695, guid: d9e99b646275ad94eaf9fdd8a3890748, type: 3}
+    - {fileID: 1860124587367505137, guid: 08794a02c99d7eb4f86dfa7995ba2a62, type: 3}
+    - {fileID: 3020154019326872074, guid: 047760c5ef3f9a54b9817159928505b0, type: 3}
+    - {fileID: 4972934309273696774, guid: 7abd279882594c94bb7e7d7ac7b39a11, type: 3}
+    - {fileID: 4586979232625490758, guid: 4f35a2445ad323e41bf9b30d3057d32c, type: 3}
+    - {fileID: 4586979232625490758, guid: 4f35a2445ad323e41bf9b30d3057d32c, type: 3}
   - Halangan:
-    - {fileID: 139071012037602661, guid: de9d7c3018b479742b7b30f68198ac36, type: 3}
-    - {fileID: 8115180001561218311, guid: c43e748ace766b449843015682fd3103, type: 3}
-    - {fileID: 8115180001561218311, guid: c43e748ace766b449843015682fd3103, type: 3}
+    - {fileID: 4077331519210919695, guid: d9e99b646275ad94eaf9fdd8a3890748, type: 3}
+    - {fileID: 4077331519210919695, guid: d9e99b646275ad94eaf9fdd8a3890748, type: 3}
+    - {fileID: 1860124587367505137, guid: 08794a02c99d7eb4f86dfa7995ba2a62, type: 3}
+    - {fileID: 4586979232625490758, guid: 4f35a2445ad323e41bf9b30d3057d32c, type: 3}
+    - {fileID: 3020154019326872074, guid: 047760c5ef3f9a54b9817159928505b0, type: 3}
+    - {fileID: 4972934309273696774, guid: 7abd279882594c94bb7e7d7ac7b39a11, type: 3}
+    - {fileID: 2959070186461880630, guid: 791f04fa412ec114c8d10b6af0d5fbdc, type: 3}
+    - {fileID: 1903019676692062913, guid: 5fc88270ec1dafa46b3208ec9b60d7ca, type: 3}
+    - {fileID: 1903019676692062913, guid: 5fc88270ec1dafa46b3208ec9b60d7ca, type: 3}
+    - {fileID: 1502095496927108481, guid: 903fe0730ad606c4b9e177db197d0c46, type: 3}
   - Halangan:
-    - {fileID: 8115180001561218311, guid: 25708b4d6806ec94686b974379195763, type: 3}
-    - {fileID: 8115180001561218311, guid: c43e748ace766b449843015682fd3103, type: 3}
-    - {fileID: 8115180001561218311, guid: c43e748ace766b449843015682fd3103, type: 3}
+    - {fileID: 2959070186461880630, guid: 791f04fa412ec114c8d10b6af0d5fbdc, type: 3}
+    - {fileID: 1903019676692062913, guid: 5fc88270ec1dafa46b3208ec9b60d7ca, type: 3}
+    - {fileID: 6932590506736865034, guid: 9f9c1cefef2b5d74fbc8d1ab3322b981, type: 3}
+    - {fileID: 722749063526874163, guid: f84f9ad6ce25c684fb4af52fd6fca598, type: 3}
+    - {fileID: 5277528433738525219, guid: 9f4fe8bb813d84f43a543c88cf12da4d, type: 3}
+    - {fileID: 3240676023123619045, guid: 024565560ccc452489fe58aa5c4066d5, type: 3}
   - Halangan:
-    - {fileID: 8115180001561218311, guid: 25708b4d6806ec94686b974379195763, type: 3}
-    - {fileID: 8115180001561218311, guid: 25708b4d6806ec94686b974379195763, type: 3}
-    - {fileID: 8115180001561218311, guid: 25708b4d6806ec94686b974379195763, type: 3}
+    - {fileID: 2130957050102602870, guid: 62ce98e2d78298c41a6258b416901edf, type: 3}
+    - {fileID: 6932590506736865034, guid: 9f9c1cefef2b5d74fbc8d1ab3322b981, type: 3}
+    - {fileID: 722749063526874163, guid: f84f9ad6ce25c684fb4af52fd6fca598, type: 3}
+  direction: {x: 1, y: 0}
 --- !u!1 &1356267993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1373,6 +1443,7 @@ MonoBehaviour:
   ScaleObj: 0
   active: 1
   jarak: 2
+  clips: {fileID: 0}
 --- !u!212 &1469933122
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1713,20 +1784,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   barangs:
   - Halangan:
-    - {fileID: 1963686785113028036, guid: 8c4b2d110a7863e4f95e7ea0f00f47fb, type: 3}
-    - {fileID: 8115180001561218311, guid: f3cc16f326a0ed74aa481935893371b0, type: 3}
+    - {fileID: 467620467902087366, guid: 8a53c49a7eea95048bd09907c4644d30, type: 3}
+    - {fileID: 8859995054717622733, guid: 1f86ffce918c9b5499a70fe09a070170, type: 3}
+    - {fileID: 5542019385788903404, guid: c71aff330409e9c4dbc6ce154e61ac0a, type: 3}
+    - {fileID: 8157862925256913348, guid: 4d91b73252470694db236c529ad632d2, type: 3}
+    - {fileID: 965679842754125709, guid: 4748e8fd520d43543af4695eaa93ed1b, type: 3}
+    - {fileID: 5660885512647004341, guid: 641595090ee10da448a665376e1de8b7, type: 3}
   - Halangan:
-    - {fileID: 8115180001561218311, guid: f3cc16f326a0ed74aa481935893371b0, type: 3}
-    - {fileID: 139071012037602661, guid: c4976b62ddab9af41aea3dc6223290e7, type: 3}
+    - {fileID: 467620467902087366, guid: 8a53c49a7eea95048bd09907c4644d30, type: 3}
+    - {fileID: 8859995054717622733, guid: 1f86ffce918c9b5499a70fe09a070170, type: 3}
+    - {fileID: 5542019385788903404, guid: c71aff330409e9c4dbc6ce154e61ac0a, type: 3}
+    - {fileID: 2663911352809463433, guid: bd5491507092af5489222d6f0b87dc7e, type: 3}
+    - {fileID: 2663911352809463433, guid: bd5491507092af5489222d6f0b87dc7e, type: 3}
+    - {fileID: 1860124587367505137, guid: 08794a02c99d7eb4f86dfa7995ba2a62, type: 3}
+    - {fileID: 4077331519210919695, guid: d9e99b646275ad94eaf9fdd8a3890748, type: 3}
+    - {fileID: 4325781131192373893, guid: d130d02ca75ca4c43aee1134ebc46a42, type: 3}
+    - {fileID: 4325781131192373893, guid: d130d02ca75ca4c43aee1134ebc46a42, type: 3}
   - Halangan:
-    - {fileID: 139071012037602661, guid: c4976b62ddab9af41aea3dc6223290e7, type: 3}
-    - {fileID: 139071012037602661, guid: 90a1253ae28e502449454fb9dac85cfd, type: 3}
+    - {fileID: 4077331519210919695, guid: d9e99b646275ad94eaf9fdd8a3890748, type: 3}
+    - {fileID: 4077331519210919695, guid: d9e99b646275ad94eaf9fdd8a3890748, type: 3}
+    - {fileID: 4325781131192373893, guid: d130d02ca75ca4c43aee1134ebc46a42, type: 3}
+    - {fileID: 1860124587367505137, guid: 08794a02c99d7eb4f86dfa7995ba2a62, type: 3}
+    - {fileID: 1903019676692062913, guid: 5fc88270ec1dafa46b3208ec9b60d7ca, type: 3}
+    - {fileID: 1903019676692062913, guid: 5fc88270ec1dafa46b3208ec9b60d7ca, type: 3}
   - Halangan:
-    - {fileID: 139071012037602661, guid: 90a1253ae28e502449454fb9dac85cfd, type: 3}
-    - {fileID: 139071012037602661, guid: 4859c2b20a3fd9b4c80d4d9f1cfda773, type: 3}
+    - {fileID: 1903019676692062913, guid: 5fc88270ec1dafa46b3208ec9b60d7ca, type: 3}
+    - {fileID: 1903019676692062913, guid: 5fc88270ec1dafa46b3208ec9b60d7ca, type: 3}
+    - {fileID: 2130957050102602870, guid: 62ce98e2d78298c41a6258b416901edf, type: 3}
+    - {fileID: 722749063526874163, guid: f84f9ad6ce25c684fb4af52fd6fca598, type: 3}
+    - {fileID: 722749063526874163, guid: f84f9ad6ce25c684fb4af52fd6fca598, type: 3}
+    - {fileID: 991399269909870095, guid: 317d9a295b1a4ac4e84cb416c06ef4b0, type: 3}
   - Halangan:
-    - {fileID: 139071012037602661, guid: 4859c2b20a3fd9b4c80d4d9f1cfda773, type: 3}
-    - {fileID: 139071012037602661, guid: 4859c2b20a3fd9b4c80d4d9f1cfda773, type: 3}
+    - {fileID: 2130957050102602870, guid: 62ce98e2d78298c41a6258b416901edf, type: 3}
+    - {fileID: 722749063526874163, guid: f84f9ad6ce25c684fb4af52fd6fca598, type: 3}
+    - {fileID: 722749063526874163, guid: f84f9ad6ce25c684fb4af52fd6fca598, type: 3}
+    - {fileID: 6932590506736865034, guid: 9f9c1cefef2b5d74fbc8d1ab3322b981, type: 3}
+  direction: {x: 0, y: -1}
 --- !u!1 &1763755869
 GameObject:
   m_ObjectHideFlags: 0
@@ -1763,6 +1856,7 @@ MonoBehaviour:
   ScaleObj: 0
   active: 1
   jarak: 0.5
+  clips: {fileID: 0}
 --- !u!212 &1763755871
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2009,6 +2103,7 @@ MonoBehaviour:
   ScaleObj: 0
   active: 1
   jarak: 2
+  clips: {fileID: 0}
 --- !u!212 &1906962114
 SpriteRenderer:
   m_ObjectHideFlags: 0
