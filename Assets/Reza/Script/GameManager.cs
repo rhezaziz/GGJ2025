@@ -8,8 +8,11 @@ public class GameManager : MonoBehaviour
     [System.Serializable]
     public class DataObj{
         public float timer;
+        public AudioClip clips;
 
     }
+
+    public AudioSource bgm;
 
     public List<Spawner> spawners;
     public List<DataObj> objS;
@@ -64,6 +67,13 @@ public class GameManager : MonoBehaviour
 
     public void initLevel(){
         level += 1;
+        if(objS[level].clips != null){
+            
+            bgm.clip = objS[level].clips;
+            bgm.Play();
+        }else{
+            bgm.Stop();
+        }
         intervalTime = objS[level].timer;
         foreach(var spawn in spawners){
             spawn.index = level;

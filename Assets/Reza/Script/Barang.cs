@@ -10,6 +10,8 @@ public class Barang : MonoBehaviour, IObject
     public int ScaleObj;
     public bool active;
 
+    public TMPro.TMP_Text level_Text;
+
     public float jarak;
     Transform objBubble;
     Transform[] obj;
@@ -27,6 +29,8 @@ public class Barang : MonoBehaviour, IObject
         if(clips != null){
             sound.PlayOneShot(clips);
         }
+        if(level_Text)
+            level_Text.text = $"{level + 1}";
     }
     // void Update(){
     //     if(active){

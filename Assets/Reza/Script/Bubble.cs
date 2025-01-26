@@ -11,6 +11,11 @@ public class Bubble : MonoBehaviour, IBubble
         public int exp;
         
     }
+
+    public TMPro.TMP_Text text_Level;
+
+    public AudioClip audioEat, audioDamage;
+    AudioSource sound;
     public int heart = 3;
 
     [SerializeField] private int level;
@@ -29,13 +34,18 @@ public class Bubble : MonoBehaviour, IBubble
 
     public TestBack test;
 
+    void Awake(){
+        sound = GetComponent<AudioSource>();
+    }
 
     void Start(){
         exp = data[level].exp;
+        text_Level.text = $"{level + 1}";
     }
 
     #region  Interface
     public void GetDamage(){
+        sound.PlayOneShot(audioDamage);
         // Health Berkurang
         if(this.heart >1){
         this.heart--;
@@ -80,6 +90,7 @@ public class Bubble : MonoBehaviour, IBubble
 
     public void eat(){
         test.changeValue(level);
+        sound.PlayOneShot(audioEat);
         Sequence anim = DOTween.Sequence();
         anim.Append(transform.DOScale(Vector2.one  * .75f, .25f));
         anim.Append(transform.DOScale(Vector2.one  * 1.25f, .25f));
@@ -93,6 +104,7 @@ public class Bubble : MonoBehaviour, IBubble
             level += 1; 
             currentExp = 0;
             exp = data[level].exp;
+                    text_Level.text = $"{level + 1}";
            // float currentSize = transform.localScale.x;
             Sequence anim = DOTween.Sequence();
             anim.Append(transform.DOScale(Vector2.one * .75f, .25f));
